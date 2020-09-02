@@ -24,7 +24,7 @@
 Begin by installing this package through Composer. Edit your project's `composer.json` file to require `laravelcollective/annotations`.
 
     "require": {
-        "laravelcollective/annotations": "6.0.\*"
+        "laravelcollective/annotations": "7.0.\*"
     }
 
 Next, update Composer from the Terminal:
@@ -284,7 +284,7 @@ Using the `@Resource` annotation on a controller allows you to easily set up a R
 ```php
 <?php
 /**
- * @Resource('users')
+ * @Resource("users")
  */
 class UsersController extends Controller {
   // index(), create(), store(), show($id), edit($id), update($id), destroy($id)
@@ -295,7 +295,7 @@ You can specify the `only` and `except` arguments, just like you can with the re
 
 ```php
   /**
-   * @Resource('users', only={"index", "show"})
+   * @Resource("users", only={"index", "show"})
    */
 ```
 
